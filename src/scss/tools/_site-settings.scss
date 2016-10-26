@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+// Fonts
+$font1:                           'Roboto', sans-serif;
+$font2:                           'Roboto', sans-serif;
+
+$font-size-large:                 16px !default;
+$font-size-medium:                14px !default;
+$font-size-small:                 11px !default;
+
+$font-weight-normal:              300;
+$font-weight-medium:              400;
+$font-weight-bold:                500;
+
+$base-line-height:                24px !default;
+$li-line-height:                  26px !default;
+$fa-li-line-height:               24px !default;
+$base-letter-spacing:             0.2px;
+
+$base-title-margin:               12px;
+$base-title-text-transform:       uppercase;
+
+$base-p-margin:                   8px;
+
+// = Grid
+// -----------------------------------------------------
+
+// = Responsive
+// -----------------------------------------------------
+$width-large:                     1200px !default;
+$width-medium:                    992px !default;
+$width-small:                     768px !default;
+
+// = Media queries breakpoints
+// -----------------------------------------------------
+$screen-xxs:                      360px !default;
+$screen-xs:                       650px !default;
+$screen-sm:                       950px !default;
+$screen-xl:                       1200px !default;
+$screen-xxl:                      1600px !default;
+
+$screen-xs-min:                   ($screen-xxs + 1) !default;
+$screen-sm-min:                   ($screen-xs + 1) !default;
+$screen-xl-min:                   ($screen-sm + 1) !default;
+$screen-xxl-min:                  ($screen-xl + 1) !default;
+
+// = Grid
+// -----------------------------------------------------
+$grid-columns:                    12 !default;
+$grid-gutter-width:               30px !default;
+$grid-gutter-height:              24px !default;
+$grid-float-breakpoint:           $screen-sm-min !default;
+$grid-float-breakpoint-max:       ($grid-float-breakpoint - 1) !default;
+
+// = Base
+// -----------------------------------------------------
+$base-bg-size:                    cover;
+$base-bg-attachment:              fixed;
+
+$base-padding:                    12px !default;
+$base-padding-vertical:           $base-padding;
+$base-padding-horizontal:         $base-padding;
+
+$base-margin:                     12px !default;
+$base-margin-vertical:            $base-margin;
+$base-margin-horizontal:          $base-margin;
+
+$base-transition-duration:        0.25s !default;
+$base-transition-delay:           1s !default;
+$base-transition-timing:          ease-in-out;
+
+// = Nav
+// -----------------------------------------------------
+$nav-height:                      50px;
+$nav-padding:                     6px;
+
+$nav-collapse-max-height:         370px !default;
+$nav-border-height:               12px !default;
+
+$nav-btn-height:                  44px;
+$nav-btn-underline-height:        3px;
+
+$nav-font-size:                   $font-size-large;
+$nav-font-weight:                 $font-weight-normal;
+$nav-font-weight-active:          $font-weight-medium;
+$nav-text-transform:              uppercase;
+
+$nav-xs-collapse-max-height:      200px !default;
+
+$nav-sm-height:                   64px;
+
+$nav-xl-height:                   $nav-sm-height;
+$nav-xl-btn-height:               34px;
+$nav-xl-padding-vertical:         ($nav-xl-height - $nav-xl-btn-height) / 2;
+$nav-xl-padding-horizontal:       $base-padding * 2;
+
+$nav-xxl-height:                  76px;
+$nav-xxl-padding-vertical:        ($nav-xxl-height - $nav-xl-btn-height) / 2;
+$nav-xxl-padding-horizontal:      $base-padding * 2;
+
+$nav-transition-duration:         0.15s;
+$nav-transition-delay:            $base-transition-delay;
+$nav-transition-timing:           $base-transition-timing;
+
+$nav-collapse-transition-duration: 0.15s;
+$nav-collapse-transition-timing:  $base-transition-timing;
+
+// = Header
+// -----------------------------------------------------
+$header-padding-vertical:         $base-padding-vertical/2;
+$header-padding-horizontal:       $base-padding-horizontal;
+$header-logo-font-size:           $font-size-medium * 2;
+
+$header-transition-duration:      $base-transition-duration;
+$header-transition-timing:        $base-transition-timing;
+
+// = About
+// -----------------------------------------------------
+$main-about2-height:              200px;
+
+// = Footer
+// -----------------------------------------------------
+$footer-font-size:                1.143em;
+$footer-font-weight:              $font-weight-medium;
+$footer-text-transform:           $base-title-text-transform;
+$footer-padding:                  $base-padding;
+
+$footer-sm-slogan-font-weight:    $font-weight-normal;
+
+$footer-copyright-font-size:      12px;
+
+$footer-transition-duration:      $base-transition-duration;
+$footer-transition-timing:        $base-transition-timing;
+
+// = Buttons
+// -----------------------------------------------------
+$btn-font-weight:                 $font-weight-medium;
+$btn-text-transform:              uppercase;
+
+$btn-padding-vertical:            $base-padding-vertical/2 !default;
+$btn-padding-horizontal:          $base-padding-horizontal !default;
+
+$btn-transition-duration:         0.15s;
+$btn-transition-delay:            $base-transition-delay;
+$btn-transition-timing:           $base-transition-timing;
+
+// = z-index
+// -----------------------------------------------------
+$base-z-index:                    0;
+$nav-z-index:                     1030;

@@ -1,0 +1,99 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+  display: inline-block;
+  color: $btn-color;
+  font-weight: $btn-font-weight;
+  text-transform: $btn-text-transform;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  white-space: nowrap;
+  margin: $btn-padding-vertical 0 0;
+  @include button-size($btn-padding-vertical, $btn-padding-horizontal, 0.9em, $base-line-height, 0);
+  @include transition(all $btn-transition-duration $btn-transition-timing);
+  @include user-select(none);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-color-hover;
+    text-decoration: none;
+    background-color: $btn-bg-color-hover;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+  }
+}
+
+@media (min-width:$screen-sm-min) {
+  .btn {
+    @include button-size($btn-padding-vertical, $btn-padding-horizontal, 0.9em, $base-line-height, 0);
+  }
+}
+
+@media (min-width:$screen-xl-min) {
+  .btn {
+    @include button-size($btn-padding-vertical, $btn-padding-horizontal, 1em, $base-line-height, 0);
+  }
+}
+
+.btn-default {
+  color: $btn-default-color;
+  border: 2px solid $btn-default-border-color;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color-hover;
+    background-color: $btn-default-bg-color-hover;
+    border-color: $btn-default-bg-color-hover;
+  }
+}
+
+.btn-orange {
+  color: $btn-orange-color;
+  border: 2px solid $btn-orange-border-color;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-orange-color-hover;
+    background-color: $btn-orange-bg-color-hover;
+    border-color: $btn-orange-bg-color-hover;
+  }
+}
+
+.btn-black {
+  color: $btn-black-color;
+  border: 2px solid $btn-black-border-color;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-black-color-hover;
+    background-color: $btn-black-bg-color-hover;
+    border-color: $btn-black-bg-color-hover;
+  }
+}

@@ -1,0 +1,139 @@
+// Graphic chart
+$white: #fff;
+$white-dark: #f3f3f3;
+$black: #000;
+$black-light: #222;
+$grey-dark: #333;
+$grey: #999;
+$grey-light: #ddd;
+$orange-light: #e4d4bb;
+$orange: #c46500;
+$orange-dark: #b65700;
+$red: #992400;
+$brown: #e48601;
+
+$color0: $white;
+$color1: $white-dark;
+$color2: $black;
+$color3: $black-light;
+$color4: $grey-light;
+$color5: $grey;
+$color6: $grey-dark;
+$color7: $orange-light;
+$color8: $orange;
+$color9: $orange-dark;
+$color10: $red;
+$color11: $brown;
+$color12: $grey-dark;
+
+$img-logo:                                url("../img/tsavo-logo.png");
+
+// Text
+$title-color:                             $color0;
+$text-color:                              $color6;
+
+// link
+$link-color:                              $color3;
+$link-color-hover:                        $color10;
+
+// Base
+$body-bg-color:                           $color1;
+
+$base-border-color:                       $color10;
+
+// White
+$white-text-color:                        $color0;
+$white-bg-color:                          $color1;
+$white-bg-image:                          url("../img/beeld3.jpg");
+
+$white-text-color-orange:                 $color8;
+$white-link-color-orange:                 $white-text-color-orange;
+$white-link-color-orange-hover:           $color10;
+
+$white-text-color-red:                    $color10;
+$white-link-color-red:                    $white-text-color-orange;
+$white-link-color-red-hover:              $color10;
+
+$white-text-color-grey:                   $color5;
+$white-link-color-grey:                   $white-text-color-grey;
+$white-link-color-grey-hover:             $color8;
+
+$white-text-color-white:                  $color0;
+$white-link-color-white:                  $white-text-color-white;
+$white-link-color-white-hover:            $color7;
+
+// Orange
+$orange-text-color:                       $color0;
+$orange-link-color:                       $orange-text-color;
+$orange-link-color-hover:                 $color10;
+$orange-bg-color:                         $color8;
+$orange-bg-color-overlay:                 rgba(196,101,0,.88);
+$orange-bg-image:                         url("../img/beeld5.jpg");
+
+// Red
+$red-text-color:                          $color0;
+$red-bg-color:                            $color10;
+$red-bg-color-overlay:                    rgba(153,36,0,.88);
+$red-bg-image:                            url("../img/beeld6.jpg");
+$red-border-color:                        $color10;
+
+// Nav
+$nav-bg-color:                            rgba(196,101,0,.88);
+$nav-border-image:                        url("../img/beeld6.jpg");
+
+$nav-btn-color:                           $color1;
+$nav-btn-color-hover:                     $color0;
+
+$nav-link-color:                          $color1;
+$nav-link-color-active:                   $color5;
+$nav-link-color-hover:                    $color0;
+
+$nav-border-color:                        $color0;
+
+$nav-contact-color:                       $color1;
+$nav-contact-color-hover:                 $color0;
+
+// Header
+$header-color:                            $color0;
+$header-border-bg-color:                  rgba(196,101,0,.88);
+
+// Services
+
+// About
+$main-about-title-color:                  $color10;
+
+// Elephants
+$main-elephants-text-color:               $color10;
+
+$main-contact-info-bg-color:              $color0;
+
+// Footer
+$footer-color:                            $color0;
+$footer-link-color:                       $color0;
+$footer-link-color-hover:                 $color4;
+$footer-slogan-color:                     $color4;
+
+// Icons
+$icon-color:                              $color10;
+$icon-bg-color:                           $color3;
+
+// Buttons
+$btn-color:                               $color8;
+$btn-color-hover:                         $color10;
+$btn-bg-color-hover:                      $color0;
+$btn-shadow-color:                        $color0;
+
+$btn-default-color:                       $color3;
+$btn-default-color-hover:                 $color0;
+$btn-default-bg-color-hover:              $color10;
+$btn-default-border-color:                $btn-default-color;
+
+$btn-orange-color:                        $color8;
+$btn-orange-color-hover:                  $color0;
+$btn-orange-bg-color-hover:               $color10;
+$btn-orange-border-color:                 $btn-orange-color;
+
+$btn-black-color:                         $color6;
+$btn-black-color-hover:                   $color0;
+$btn-black-bg-color-hover:                $color10;
+$btn-black-border-color:                  $btn-black-color;

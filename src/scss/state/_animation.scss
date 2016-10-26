@@ -1,0 +1,27 @@
+.animated {
+  @include animation-duration(1s);
+  @include animation-fill-mode(both);
+}
+
+.loop {
+  @include animation-iteration-count(infinite);
+}
+
+.delay-2s {
+  @include animation-delay(2s);
+}
+
+@keyframes slideOutDown {
+  from {
+    @include translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    @include translate3d(0, 100%, 0);
+  }
+}
+
+.slide-out-down {
+  animation-name: slideOutDown;
+}

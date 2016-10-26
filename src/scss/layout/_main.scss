@@ -1,0 +1,203 @@
+main {
+
+  &.homepage {
+    .photo {
+      background-image: url("../img/beeld3.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    @media (min-width:$screen-xl-min) {
+      &.affix {
+        margin-top: $nav-xl-height + $base-padding-vertical;
+      }
+    }
+    @media (min-width:$screen-xxl-min) {
+      &.affix {
+        margin-top: $nav-xxl-height + $base-padding-vertical;
+      }
+    }
+  }
+
+  &.servicespage {
+    padding-bottom: $base-padding-vertical*2;
+
+    @media (min-width:$screen-sm-min) {
+      .affix {
+        position: fixed;
+        top: $nav-sm-height + $base-padding-vertical;
+        width: 50%;
+        padding-right: 24px !important;
+      }
+
+      figure > img {
+        max-height: 82vh !important;
+      }
+      .services-text {
+        float: right;
+      }
+    }
+    @media (min-width:$screen-xxl-min) {
+      .affix {
+        top: $nav-xxl-height + $base-padding-vertical;
+        width: ($width-large/2) - $base-padding-horizontal;
+        padding-right: $base-padding-horizontal !important;
+      }
+      .affix-bottom {
+        padding-top: 0px !important;
+      }
+    }
+    .service {
+      background-color: #fff;
+      border-top: $base-padding solid $body-bg-color;
+
+      .service-title {
+        line-height: 24px;
+        margin: 6px 0;
+        padding-left: 6px;
+      }
+      @media (min-width:$screen-sm-min) {
+        .service-title {
+          padding-left: 0;
+          
+          &.singleline {
+            line-height: 48px;
+          }
+        }
+      }
+    }
+    @media (min-width:$screen-sm-min) {
+      .service {
+        border: $base-padding solid $body-bg-color;
+
+        ul {
+          height: 70px;
+        }
+      }
+    }
+    @media (min-width:$screen-xxl-min) {
+      padding-bottom: $base-padding-vertical*3;
+
+      .service-img > img {
+        float: right;
+        max-height: 80vh;
+      }
+    }
+  }
+
+  &.aboutpage {
+    padding-bottom: $base-padding-vertical;
+
+    .elephants {
+      color: $main-elephants-text-color;
+      font-size: 1.3em;
+      text-shadow: 0 0 4px rgba(255,255,255,.7);
+      background-image: url("../img/elephants.jpg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      padding-top: 40px;
+      padding-bottom: 300px;
+      margin-top: $base-margin-vertical;
+    }
+  }
+
+  &.teampage {
+    padding-bottom: $base-padding-vertical;
+
+    .person {
+      padding: 0 0 $base-padding-vertical*2;
+      border: $base-padding-vertical solid #f3f3f3;
+
+      > .photo {
+        position: absolute;
+        display: block;
+        left: 50%;
+        @include square(160px);
+        background-color: #fff;
+        padding: 4px;
+        margin: 0 auto 0 -80px;
+        border: 4px solid #992400;
+        border-radius: 50%;
+        overflow: hidden;
+
+        > img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+      > .info {
+        text-align: center;
+        background-color: #fff;
+        padding: 100px 12px 12px;
+        margin-top: 80px;
+        @include clearfix();
+      }
+      > .contact {
+        height: auto;
+        text-align: center;
+        padding: 8px;
+        @include clearfix();
+
+        > a {
+          color: #fff;
+          padding: 4px;
+          margin: 4px 8px;
+
+          > .fa {
+            font-size: 1.6em;
+          }
+
+          &:hover {
+            color: #992400;
+          }
+        }
+      }
+    }
+
+    @media (min-width:$screen-sm-min) {
+      .person {
+        padding: 0 0 $base-padding-vertical*4;
+      }
+    }
+
+    @media (min-width:$screen-xl-min) {
+      .person {
+        padding: 0 0 $base-padding-vertical*5;
+      }
+    }
+  }
+
+  &.contactpage {
+    padding-bottom: 0;
+
+    .info {
+      min-height: 80px;
+      background-color: $main-contact-info-bg-color;
+      border: $base-padding solid $body-bg-color;
+    }
+    .address {
+      margin: 24px 0 36px;
+    }
+    .gmap {
+      display: block;
+      @include size(100%, 80vh);
+    }
+    @media (min-width:$screen-sm-min) {
+      .info {
+        min-height: 175px;
+      }
+    }
+    @media (min-width:$screen-xl-min) {
+      .info {
+        //min-height: 180px;
+      }
+      .gmap {
+        @include size(100%, 40vw);
+      }
+    }
+  }
+
+}

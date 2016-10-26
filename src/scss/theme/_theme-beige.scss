@@ -1,0 +1,99 @@
+// Graphic chart
+$white: #fff;
+$white-dark: #f3f1ed;
+$black: #000;
+$black-light: #222;
+$grey-dark: #333;
+$grey: #666;
+$grey-light: #888;
+$beige-light: #e4d4bb;
+$beige: #ddbe90;
+$beige-dark: #dab989;
+$brown: #a05e00;
+$gold: #e48601;
+
+$color0: $white;
+$color1: $white-dark;
+$color2: $black;
+$color3: $black-light;
+$color4: $grey-light;
+$color5: $grey;
+$color6: $grey-dark;
+$color7: $beige-light;
+$color8: $beige;
+$color9: $beige-dark;
+$color10: $brown;
+$color11: $gold;
+$color12: $grey-dark;
+
+// Text
+$title-color: $color3;
+$text-color: $color3;
+
+// link
+$link-color: $color3;
+$link-hover-color: $color10;
+
+// Btn
+$bg-btn: #555;
+$bg-btn-hover: darken($bg-btn, 10%);
+$clr-btn: #212121;
+$clr-btn-hover: darken($clr-btn, 10%);
+
+// Base
+$body-bg-color:                         $color8;
+
+$base-border-color:                     $color5;
+
+// Header
+$header-bg-color:                       $color8;
+$header-link-color:                     $color3;
+$header-link-color-hover:               $color10;
+
+$header-lang-bg-color:                  $color7;
+$header-lang-bg-color-hover:            $color1;
+$header-lang-link-color:                $color12;
+
+$header-collapse-bg-color:              $color3;
+$header-collapse-link-color:            $color8;
+$header-collapse-link-color-hover:      $color10;
+
+// Main main-menu
+$nav-link-color:                        $color3;
+$nav-link-color-active:                 $color3;
+$nav-link-color-hover:                  $color10;
+
+$nav-dropdown-link-color: $color8;
+$nav-dropdown-bg-color: $color3;
+
+$nav-mobile-link-color: $color8;
+$nav-mobile-link-color-hover: $color10;
+
+// Photo
+$photo-bg-color: $color1;
+
+// Intro
+$intro-bg-color: $color1;
+
+// Testimonials
+$testimonials-quote-color: $color3;
+$testimonials-rating-color: $color11;
+
+// Footer
+$footer-text-color: $color8;
+$footer-icon-color: $color10;
+$footer-copyright-color: $color5;
+$footer-link-color: $color4;
+$footer-link-color-hover: $color10;
+$footer-bg-color: $color3;
+
+// Icons
+$icon-color: $color10;
+$icon-bg-color: $color3;
+
+// Buttons
+$btn-color: $color8;
+$btn-color-hover: $color10;
+$btn-bg-color: $color12;
+$btn-bg-color-hover: $color12;
+$btn-shadow-color: $color2;

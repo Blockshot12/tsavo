@@ -1,0 +1,411 @@
+html {
+	font-size: $font-size-small;
+}
+body {
+	font-family: $font1;
+	font-size: $font-size-medium;
+	color: $text-color;
+	font-weight: 300;
+	background-position: center -212px;
+	background-color: $body-bg-color;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font2;
+	font-size: 2.1em;
+	font-weight: $font-weight-medium;
+	text-transform: uppercase;
+	margin: 0 auto 8px;
+}
+h1 {
+	font-weight: $font-weight-bold;
+	margin: 0;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.2em;
+}
+@media (min-width:$screen-sm-min) {
+	h1 {
+		font-size: 2.4em;
+	}
+	h2 {
+		font-size: 2.3em;
+		margin: 0 auto 10px;
+	}
+	h3 {
+		font-size: 1.7em;
+		margin: 0px auto 10px;
+	}
+	h4 {
+		font-size: 1.3em;
+		margin: 0px auto 10px;
+	}
+}
+@media (min-width:$screen-xl-min) {
+	h1 {
+		font-size: 2.5em;
+	}
+	h2 {
+		font-size: 2.65em;
+		margin: 0 auto 12px;
+	}
+	h3 {
+		font-size: 1.8em;
+		margin: 0px auto 12px;
+	}
+	h4 {
+		font-size: 1.4em;
+		margin: 0px auto 12px;
+	}
+}
+@media (min-width:$screen-xxl-min) {
+	h1 {
+		font-size: 2.8em;
+	}
+	h2 {
+		font-size: 2.65em;
+		margin: 0 auto 12px;
+	}
+	h3 {
+		font-size: 2em;
+		margin: 0px auto 12px;
+	}
+	h4 {
+		font-size: 1.4em;
+		margin: 0px auto 12px;
+	}
+}
+
+p {
+	line-height: $base-line-height;
+	letter-spacing: $base-letter-spacing;
+	margin: 0 0 $base-p-margin;
+}
+.subtitle {
+	font-size: 1.5em;
+}
+@media (min-width:$screen-sm-min) {
+	p {
+		font-size: $font-size-large;
+	}
+	.subtitle {
+		font-size: 1.6em;
+	}
+}
+@media (min-width:$screen-xl-min) {
+	.subtitle {
+		font-size: 1.7em;
+	}
+}
+@media (min-width:$screen-xxl-min) {
+	.subtitle {
+		font-size: 2em;
+	}
+}
+span {
+
+}
+strong {
+	font-weight: $font-weight-bold;
+}
+article {
+	.paragraph {
+		padding-bottom: $base-padding-vertical;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	@media (min-width:$screen-xl-min) {
+		.paragraph {
+			padding-bottom: $base-padding-vertical*2;
+		}
+	}
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+ul > li {
+	line-height: $li-line-height;
+
+	> .fa-li {
+		line-height: $fa-li-line-height;
+	}
+}
+@media (min-width:$screen-xl-min) {
+	ul > li {
+		font-size: $font-size-large;
+	}
+}
+
+a,
+button {
+	color: $link-color;
+	text-decoration: none;
+  background-color: transparent;
+
+	&:hover {
+		color: $link-color-hover;
+	}
+}
+a:focus,
+a:active,
+a:hover,
+button:focus,
+button:active,
+button:hover {
+  outline: 0;
+}
+img {
+  border: 0;
+}
+figure {
+  margin: 0;
+}
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+pre {
+  overflow: auto;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.center {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+}
+@media (max-width:$screen-xs) {
+	.center-xs {
+		position: relative;
+		display: inline-block;
+		margin: 0 auto;
+	}
+}
+.left {
+  float: left !important;
+}
+.right {
+  float: right !important;
+}
+@media (min-width:$screen-sm-min) {
+	.left-sm {
+		float: left !important;
+	}
+	.right-sm {
+		float: right !important;
+	}
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+@media (max-width:$screen-xs) {
+	.text-center {
+	  p {
+			text-align: left;
+
+			&.subtitle {
+				text-align: center;
+			}
+		}
+	}
+	.text-center-xs {
+	  text-align: center;
+	}
+}
+@media (min-width:$screen-sm-min) {
+	.text-center-sm {
+	  text-align: center;
+	}
+}
+.text-justify {
+  text-align: justify;
+}
+
+.bg-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: $base-bg-attachment;
+}
+.white {
+	color: $white-text-color !important;
+	background-color: $white-bg-color;
+
+	&.bg-image {
+		background-image: $white-bg-image;
+	}
+	a {
+		color: $white-text-color;
+	}
+}
+.orange {
+	color: $orange-text-color !important;
+	background-color: $orange-bg-color;
+
+	&.bg-image {
+		background-image: $orange-bg-image;
+	}
+	a {
+		color: $orange-link-color;
+
+		&:hover {
+			color: $orange-link-color-hover;
+		}
+	}
+}
+.orange-text {
+	color: $white-text-color-orange;
+
+	h1, h2, h3, h4, h5, p {
+		color: $white-text-color-orange;
+	}
+	a {
+		color: $white-link-color-orange;
+
+		&:hover {
+			color: $white-link-color-orange-hover;
+		}
+	}
+}
+.red-text {
+	color: $white-text-color-red;
+
+	h1, h2, h3, h4, h5, p {
+		color: $white-text-color-red;
+	}
+	a {
+		//color: $white-link-color-red;
+
+		&:hover {
+			//color: $white-link-color-red-hover;
+		}
+	}
+}
+.white-text {
+	color: $white-text-color-white;
+
+	h1, h2, h3, h4, h5, p {
+		color: $white-text-color-white;
+	}
+	a {
+		color: $white-link-color-white;
+
+		&:hover {
+			color: $white-link-color-white-hover;
+		}
+	}
+}
+.grey-text {
+	color: $white-text-color-grey;
+
+	a {
+		color: $white-link-color-grey;
+
+		&:hover {
+			color: $white-link-color-grey-hover;
+		}
+	}
+}
+.red {
+	color: $red-text-color !important;
+	background-color: $red-bg-color;
+
+	&.bg-image {
+		background-image: $red-bg-image;
+	}
+	a {
+		color: $red-text-color;
+	}
+}
+.red-border {
+	border-color: $red-border-color;
+}
+@media (max-width:$screen-xs) {
+	.orange-xs {
+		color: $orange-text-color !important;
+		background-color: $orange-bg-color;
+
+		&.bg-image {
+			background-image: $orange-bg-image;
+		}
+		a {
+			color: $orange-text-color;
+		}
+
+		&.orange-text {
+			color: $orange-text-color ;
+
+			h1, h2, h3, h4, h5, p {
+				color: $orange-text-color ;
+			}
+			a {
+				color: $orange-text-color ;
+
+				&:hover {
+					color: $white-link-color-orange-hover;
+				}
+			}
+		}
+	}
+}
