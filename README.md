@@ -1,6 +1,6 @@
 <h1>Vinci website build with Gulp</h1>
 
-<blockquote>A basic website using HTML, CSS and Javascript.</blockquote>
+<p>A basic website using HTML, CSS and Javascript.</p>
 
 <h2>Recources</h2>
 Gulp - http://gulpjs.com/<br />
