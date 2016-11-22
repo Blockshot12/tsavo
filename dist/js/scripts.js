@@ -441,7 +441,7 @@
  */
 "use strickt";
 
-//console.log('main.js');
+console.log('main.js');
 
 /**
  * Nav.
