@@ -3,7 +3,6 @@
 import path from 'path';
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
-import runSequence from 'run-sequence';
 import * as conf from './_conf';
 
 import gulpLoadPlugins from 'gulp-load-plugins';
