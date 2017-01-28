@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Contact | Tsavo</title>
+	<!-- partial:../partials/_head.html -->
+  <!-- partial -->
+</head>
+<body>
+
+	<!-- partial:../partials/_nav.html -->
+	<!-- partial -->
+
+	<header class="container" role="header">
+		<section class="row">
+      <div class="col-12 header-title text-center">
+        <h1>Contact</h1>
+      </div>
+
+      <div class="col-8 col-offset-2 header-subtitle text-center">
+				<h3 class="subtitle red-text">Wij luisteren graag</h3>
+				<p>
+					Vraag of opmerking? Of een vrijblijvende offerte opvragen? We gaan graag met u in gesprek. Stuur een e-mail naar <a href="mailto:info@tsavo.eu">info@tsavo.eu</a> of bel naar <a href="tel:+31657757877">+31(0)6 577 578 77</a>.
+				</p>
+			</div>
+		</section>
+
+	</header>
+
+	<main class="container contactpage" role="main">
+	  <a id="main-content" tabindex="-1"></a>
+
+		<section class="row">
+			<article class="col-4 text-center info">
+				<div class="center text-left">
+					<h3>Tsavo BV</h3>
+					<p>
+						Bank NL44 RABO 0308 5466 60<br />
+						KVK	64889750<br />
+						BTW NL.8558.89.664.B.01
+					</p>
+				</div>
+			</article>
+			<article class="col-4 text-center info">
+				<div class="center text-left">
+					<h3>Direct contact</h3>
+					<p>
+						<a href="tel:+31657757877"><i class="fa fa-phone fa-lg"></i> +31(0)6 577 578 77</a> (David Emous)<br />
+						<a href="mailto:info@tsavo.eu"><i class="fa fa-envelope fa-lg"></i> info@tsavo.eu</a>
+					</p>
+				</div>
+			</article>
+			<aside class="col-4 text-center info">
+				<div class="center text-left">
+					<h3>Volg ons</h3>
+					<p>
+						<a href="https://www.linkedin.com/company/10575113" target="_blank"><i class="fa fa-linkedin fa-lg"></i> Tsavo B.V.</a>
+					</p>
+				</div>
+			</aside>
+		</section>
+
+		<section class="row">
+			<div class="col-12 text-center">
+				<h3 class="address"><strong>Tsavo BV</strong><br class="visible-xs" /> <span class="hidden-xs">- </span>Papiermolen 34<br class="visible-xs" /> <span class="hidden-xs">- </span> 3994 DK - Houten</h3>
+			</div>
+		</section>
+
+		<section class="row-fluid">
+			<aside id="gmap" class="col-12 no-padding gmap">
+			</aside>
+		</section>
+
+		<div class="row-fluid red border-bottom"></div>
+
+	</main>
+
+	<!-- partial:../partials/_footer.html -->
+	<!-- partial -->
+
+	<script>
+      function initMap() {
+
+        var styledMapType = new google.maps.StyledMapType(
+          [
+            {
+              stylers: [
+                { hue: '#c46500' },
+                { saturation: -20 }
+              ]
+            }
+          ],
+          {name: 'Kaart'});
+
+        // Create a map object, and include the MapTypeId to add
+        // to the map type control.
+        var map = new google.maps.Map(document.getElementById('gmap'), {
+          center: {lat: 52.0256938, lng: 5.174871},
+          zoom: 17,
+          zoomControl : true,
+          zoomControlOpt: {
+            style : "SMALL",
+            position: "TOP_LEFT"
+          },
+          scrollwheel: false,
+          streetViewControl : false,
+          mapTypeControl: true,
+          overviewMapControl: true,
+          draggable: false,
+          mapTypeControlOptions: {
+            mapTypeIds: ['styled_map', 'satellite']
+          }
+        });
+
+        var image = new google.maps.MarkerImage(
+          'img/tsavo-gmap.png',
+          null, /* size is determined at runtime */
+          null,
+          new google.maps.Point(102, 106),
+          new google.maps.Size(204, 212)
+        );
+
+
+
+        function addMarker(feature) {
+          var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: image,
+            map: map
+          });
+        }
+
+        var features = [
+          {
+            position: new google.maps.LatLng(52.0256938, 5.174871),
+            type: 'info'
+          }
+        ];
+
+        for (var i = 0, feature; feature = features[i]; i++) {
+          addMarker(feature);
+        }
+
+        //Associate the styled map with the MapTypeId and set it to display.
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXPQ-Ca4zuM5zGftgXLv5BstiHTHkmRCM&callback=initMap"
+    async defer></script>
+
+		<!-- partial:../partials/_analytics.html -->
+		<!-- partial -->
+</body>
+</html>
