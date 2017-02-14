@@ -1,0 +1,11 @@
+.paragraph {
+	margin-bottom: $base-padding-vertical;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (min-width:$screen-xl-min) {
+		margin-bottom: $base-padding-vertical*2;
+	}
+}

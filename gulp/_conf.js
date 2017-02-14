@@ -23,6 +23,7 @@ export const paths = {
   },
   html: {
     src: `${dirs.html}/**/*.html`,
+    partials: `partials/**/*.html`,
     dist: `${dirs.dist}`
   }
 };

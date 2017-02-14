@@ -60,7 +60,7 @@ main {
       @media (min-width:$screen-sm-min) {
         .service-title {
           padding-left: 0;
-          
+
           &.singleline {
             line-height: 48px;
           }
@@ -192,7 +192,7 @@ main {
     }
     @media (min-width:$screen-xl-min) {
       .info {
-        //min-height: 180px;
+        min-height: 190px;
       }
       .gmap {
         @include size(100%, 40vw);

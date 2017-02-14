@@ -15,7 +15,7 @@
 
   .logo {
     display: block;
-    float: left;
+    position: absolute;
     @include size(86px, 38px);
 
     > img {
@@ -135,7 +135,7 @@
   }
 }
 
-@media (min-width:$screen-xl-min) {
+@media (min-width: 1101px) {
   .navbar-header {
     float: left;
     height: $nav-xl-height;
@@ -247,14 +247,14 @@
     ul {
       > li {
         > a {
-          font-size: 1.4em;
+          font-size: 1rem;
         }
       }
     }
   }
 }
 
-@media (min-width:$screen-xl-min) {
+@media (min-width: 1101px) {
   .navbar-collapse {
     &.collapse {
       display: block;
@@ -263,7 +263,7 @@
     ul {
       display: inline-block;
       float: right;
-      @include size(880px, $nav-xl-height);
+      @include size(1000px, $nav-xl-height);
       text-align: right;
       padding: $nav-xl-padding-vertical $nav-xl-padding-horizontal $nav-xl-padding-vertical 0;
       margin: 0;
@@ -280,7 +280,7 @@
           position: relative;
           display: inline-block;
           vertical-align: middle;
-          font-size: $font-size-large;
+          font-size: 1.3rem;
           font-weight: $nav-font-weight;
           line-height: $nav-xl-btn-height;
           @include translate3d(0,0,0);
@@ -336,11 +336,15 @@
 @media (min-width:$screen-xxl-min) {
   .navbar-collapse {
     ul {
-      @include size(880px, $nav-xxl-height);
+      @include size(1000px, $nav-xxl-height);
       padding: $nav-xxl-padding-vertical $nav-xxl-padding-horizontal $nav-xxl-padding-vertical 0;
 
       > li {
         margin-right: $nav-xxl-padding-horizontal;
+
+        > a {
+          font-size: 1.4rem;
+        }
       }
       &.contact-menu {
         display: none;

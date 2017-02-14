@@ -29,7 +29,7 @@ let buildHTML = () => {
       removeTags: true
     }))
     .pipe($.htmlmin({collapseWhitespace: true}))
-    .pipe($.prettyUrl())
+    //.pipe($.prettyUrl())
     .pipe(gulp.dest(conf.paths.html.dist))
     .pipe($.notify({
       title: 'HTML task completed',

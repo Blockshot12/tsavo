@@ -8,4 +8,5 @@ gulp.task('watch', ['build'], () => {
   gulp.watch(conf.paths.scripts.src, ['build']);
   gulp.watch(conf.paths.images.src, ['build']);
   gulp.watch(conf.paths.html.src, ['build']);
+  gulp.watch(conf.paths.html.partials, ['build']);
 });

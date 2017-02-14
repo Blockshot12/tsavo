@@ -78,7 +78,8 @@
 .col-2,
 .col-1,
 .col-xl-3,
-.col-xs-4 {
+.col-xs-4,
+.col-md-6 {
   position: relative;
   float: left;
   min-height: 1px;
@@ -97,7 +98,9 @@
 .col-3,
 .col-xl-3,
 .col-2,
-.col-1 {
+.col-1,
+.col-sm-8,
+.col-md-6 {
   width: 100%;
 
   &.col-border-right {
@@ -143,7 +146,7 @@
   .col-9 {
     width: 75%;
   }
-  .col-8 {
+  .col-8, .col-sm-8 {
     width: 66.66666667%;
   }
   .col-7 {
@@ -178,8 +181,10 @@
   .col-1 {
     width: 8.33333333%;
   }
-
-  .col-offset-2 {
+  .col-offset-3 {
+    margin-left: 25%;
+  }
+  .col-offset-2, .col-sm-offset-2 {
     margin-left: 16.66666667%;
   }
   .col-offset-1 {
@@ -204,6 +209,13 @@
   }
   .col-offset-1 {
     margin-left: 8.33333333%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
   }
 }
 

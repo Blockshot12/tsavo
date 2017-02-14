@@ -115,20 +115,6 @@ span {
 strong {
 	font-weight: $font-weight-bold;
 }
-article {
-	.paragraph {
-		padding-bottom: $base-padding-vertical;
-
-		&:last-child {
-			padding-bottom: 0;
-		}
-	}
-	@media (min-width:$screen-xl-min) {
-		.paragraph {
-			padding-bottom: $base-padding-vertical*2;
-		}
-	}
-}
 
 article,
 aside,
