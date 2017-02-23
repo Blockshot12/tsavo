@@ -233,19 +233,19 @@ th {
   clear: both;
 }
 
-.row {
+.row, .project--horizontal {
   width: 100%;
   padding: 0 12px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.row:before, .row:after {
+.row:before, .project--horizontal:before, .row:after, .project--horizontal:after {
   content: " ";
   display: table;
 }
 
-.row:after {
+.row:after, .project--horizontal:after {
   clear: both;
 }
 
@@ -262,31 +262,31 @@ th {
   clear: both;
 }
 
-.row.small,
+.row.small, .small.project--horizontal,
 .row-fluid.small {
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.row.medium,
+.row.medium, .medium.project--horizontal,
 .row-fluid.medium {
   padding-top: 36px;
   padding-bottom: 24px;
 }
 
-.row.large,
+.row.large, .large.project--horizontal,
 .row-fluid.large {
   padding-top: 48px;
   padding-bottom: 36px;
 }
 
 @media (min-width: 651px) {
-  .row.medium,
+  .row.medium, .medium.project--horizontal,
   .row-fluid.medium {
     padding-top: 36px;
     padding-bottom: 36px;
   }
-  .row.large,
+  .row.large, .large.project--horizontal,
   .row-fluid.large {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -294,23 +294,23 @@ th {
 }
 
 @media (min-width: 993px) {
-  .row {
+  .row, .project--horizontal {
     max-width: 1200px;
   }
 }
 
 @media (min-width: 1201px) {
-  .row.small,
+  .row.small, .small.project--horizontal,
   .row-fluid.small {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-  .row.medium,
+  .row.medium, .medium.project--horizontal,
   .row-fluid.medium {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .row.large,
+  .row.large, .large.project--horizontal,
   .row-fluid.large {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -398,6 +398,20 @@ th {
   border-top-style: solid;
 }
 
+@media (max-width: 360px) {
+  .col-xs-2 {
+    width: 50%;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 650px) {
+  .col-xs-2 {
+    width: 33.33333333%;
+    padding: 12px;
+  }
+}
+
 .col-xs-4 {
   width: 33.33333333%;
 }
@@ -459,6 +473,9 @@ th {
   }
   .col-3 {
     width: 25%;
+  }
+  .col-2 {
+    width: 16.66666667%;
   }
   .col-1 {
     width: 8.33333333%;
@@ -998,7 +1015,7 @@ header {
   margin-top: 62px;
 }
 
-header .row {
+header .row, header .project--horizontal {
   padding-top: 12px;
   padding-bottom: 0;
 }
@@ -1034,7 +1051,7 @@ header.homepage > .header-slogan {
   header {
     margin-top: 76px;
   }
-  header .row {
+  header .row, header .project--horizontal {
     padding-top: 24px;
     padding-bottom: 0;
   }
@@ -1086,7 +1103,7 @@ header.homepage > .header-slogan {
     min-height: 30vh;
     padding: 12px;
   }
-  header .row {
+  header .row, header .project--horizontal {
     padding-top: 36px;
     padding-bottom: 12px;
   }
@@ -1273,7 +1290,7 @@ header.homepage > .header-slogan {
 
 .navbar-collapse {
   width: 100%;
-  max-height: 370px;
+  max-height: 410px;
   padding: 0;
   margin: 0;
 }
@@ -1364,12 +1381,19 @@ header.homepage > .header-slogan {
   }
 }
 
-@media (min-width: 651px) {
-  .navbar-collapse ul > li > a {
-    font-size: 1rem;
+/*
+@media (min-width:$screen-sm-min) {
+  .navbar-collapse {
+    ul {
+      > li {
+        > a {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
-
+*/
 @media (min-width: 1101px) {
   .navbar-collapse.collapse {
     display: block;
@@ -1941,6 +1965,40 @@ footer .footer-copyright p > a:hover {
   border-color: #992400;
 }
 
+.clients {
+  background-color: #fff;
+}
+
+.client__logo {
+  display: block;
+  max-width: 124px;
+  margin: 4px;
+}
+
+@media (min-width: 421px) {
+  .client__logo {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 521px) {
+  .client__logo {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 651px) {
+  .client__logo {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 801px) {
+  .client__logo {
+    margin: 10px;
+  }
+}
+
 .paragraph {
   margin-bottom: 12px;
 }
@@ -1958,6 +2016,43 @@ footer .footer-copyright p > a:hover {
 .info {
   padding: 20px;
   background-color: #fff;
+}
+
+.project {
+  padding: 12px;
+  background-color: #fff;
+}
+
+.project__logo {
+  width: 80%;
+  max-width: 400px;
+  margin: 12px auto 12px;
+}
+
+.project__logo--horizontal {
+  text-align: center;
+}
+
+.project__info {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.project__info--horizontal {
+  padding-top: 32px;
+  padding-bottom: 12px;
+}
+
+.project--horizontal {
+  max-width: 1000px;
+  margin: 12px auto;
+  background-color: #fff;
+}
+
+@media (min-width: 651px) {
+  .project--horizontal {
+    margin: 12px auto 24px;
+  }
 }
 
 /* State */

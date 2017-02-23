@@ -241,7 +241,7 @@
     max-height: $nav-xs-collapse-max-height;
   }
 }
-
+/*
 @media (min-width:$screen-sm-min) {
   .navbar-collapse {
     ul {
@@ -253,7 +253,7 @@
     }
   }
 }
-
+*/
 @media (min-width: 1101px) {
   .navbar-collapse {
     &.collapse {

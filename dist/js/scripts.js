@@ -17,24 +17,29 @@ console.log('main.js');
  (function () {
     'use strict';
 
-    var currentUrl = window.location.pathname.slice(6);
+    if(window.location.pathname.substring(0,6) == "/tsavo") {
+        var currentUrl = window.location.pathname.slice(6);
+    } else {
+        var currentUrl = window.location.pathname;
+    }
+
     //console.log(currentUrl);
 
     switch(currentUrl) {
-        case "/gebouwbeheer.html":
-            $('#gebouwbeheer').addClass('is-active');
+        case "/vastgoedbeheer.html":
+            $('#vastgoedbeheer').addClass('is-active');
             break;
         case "/interim-advies.html":
             $('#interim-advies').addClass('is-active');
             break;
-        case "/projecten.html":
-            $('#projecten').addClass('is-active');
+        case "/klanten.html":
+            $('#klanten').addClass('is-active');
             break;
         case "/ons-verhaal.html":
             $('#ons-verhaal').addClass('is-active');
             break;
         case "/onze-mensen.html":
-            $('#onze-mensen').addClass('is-active');
+            $('#mensen').addClass('is-active');
             break;
         case "/vacatures.html":
             $('#vacatures').addClass('is-active');

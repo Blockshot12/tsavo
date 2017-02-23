@@ -1,0 +1,40 @@
+$color-project-bg: $white;
+
+.project {
+	padding: $base-padding;
+	background-color: $color-project-bg;
+
+	&__logo {
+		width: 80%;
+		max-width: 400px;
+		margin: $base-padding-vertical auto $base-padding-vertical;
+
+		&--horizontal {
+			text-align: center;
+
+			> img {
+				//max-width: 400px;
+			}
+		}
+	}
+	&__info {
+		padding-top: $base-padding-vertical;
+		padding-bottom: $base-padding-vertical;
+
+		&--horizontal {
+			padding-top: 32px;
+			padding-bottom: 12px;
+		}
+	}
+
+	&--horizontal {
+		@extend .row;
+		max-width: 1000px;
+		margin: $base-margin-vertical auto;
+		background-color: $color-project-bg;
+
+		@media (min-width:$screen-sm-min) {
+			margin: $base-margin-vertical auto 24px;
+		}
+	}
+}

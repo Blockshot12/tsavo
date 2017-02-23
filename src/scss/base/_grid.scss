@@ -116,6 +116,18 @@
     border-top-style: solid;
   }
 }
+@media (max-width:$screen-xxs) {
+  .col-xs-2 {
+    width: 50%;
+    padding: $base-padding-vertical;
+  }
+}
+@media (min-width:$screen-xs-min) and (max-width:$screen-xs) {
+  .col-xs-2 {
+    width: 33.33333333%;
+    padding: $base-padding-vertical;
+  }
+}
 .col-xs-4 {
   width: 33.33333333%;
 }
@@ -177,6 +189,9 @@
   }
   .col-3 {
     width: 25%;
+  }
+  .col-2 {
+    width: 16.66666667%;
   }
   .col-1 {
     width: 8.33333333%;
