@@ -34,6 +34,7 @@
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
     "gulp-uncss": "^1.0.6",
+    "gulp-util": "^3.0.8",
     "lost": "^8.0.0",
     "path": "^0.12.7",
     "run-sequence": "^1.2.2"
