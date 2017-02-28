@@ -28,7 +28,7 @@
         case "/ons-verhaal.html":
             $('#ons-verhaal').addClass('is-active');
             break;
-        case "/onze-mensen.html":
+        case "/mensen.html":
             $('#mensen').addClass('is-active');
             break;
         case "/vacatures.html":
