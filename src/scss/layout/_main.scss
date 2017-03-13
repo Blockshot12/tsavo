@@ -121,6 +121,7 @@ main {
         border: 4px solid #992400;
         border-radius: 50%;
         overflow: hidden;
+        z-index: 1;
 
         > img {
           width: 100%;

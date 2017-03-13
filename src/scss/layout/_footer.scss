@@ -16,9 +16,9 @@ footer {
     }
 
     .footer-slogan {
-      display: block;
+      display: inline-block;
       color: $footer-slogan-color;
-      margin: 0;
+      margin: 0 0 0 8px;
       @include translate(0,-2px);
     }
   }
@@ -38,7 +38,7 @@ footer {
   }
   @media (min-width:$screen-xl-min) {
     .footer-branding {
-      padding: $footer-padding $footer-padding*2;
+      padding: $footer-padding $footer-padding*2 8px;
     }
   }
 
@@ -81,7 +81,7 @@ footer {
 
   @media (min-width:$screen-sm-min) {
     .footer-contact {
-      padding: $footer-padding*3 $footer-padding 0;
+      padding: 11px $footer-padding 0;
 
       ul.footer-menu {
         > li {

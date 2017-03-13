@@ -34,6 +34,9 @@
         case "/vacatures.html":
             $('#vacatures').addClass('is-active');
             break;
+        case "/officemanager.html":
+            $('#vacatures').addClass('is-active');
+            break;
         case "/contact.html":
             $('#contact').addClass('is-active');
             break;
